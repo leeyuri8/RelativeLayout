@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiends"
+
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/hd"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:text="MOMENTUM"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="-6dp"
+        android:text="GROWTH • HAPPENS • TODAY"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/sg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hd2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginBottom="-84dp"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hd2"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="-81dp"
+
+        android:layout_toEndOf="@+id/sg"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/hd2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-190dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="15"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#fff"
+        android:textColorLink="#6E1010"
+        />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="-90dp"
+        android:backgroundTint="#607d8b"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Sign in with Email"
+        android:textAllCaps="false"
+        android:textDirection="firstStrong" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="60dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/signin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="235dp"
+
+        android:background="#4a7c8e" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="60dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/signin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="247dp"
+        android:layout_marginBottom="235dp"
+        android:layout_toEndOf="@id/or"
+        android:background="#4a7c8e" />
+
+    <Button
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/or"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="149dp"
+        android:backgroundTint="#3d599b"
+        android:drawableLeft="@drawable/ic_baseline_facebook_24"
+        android:drawablePadding="10dp"
+        android:text="Sign in with Facebook"
+        android:textAllCaps="false"
+        android:textDirection="firstStrong" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-74dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:ems="15"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#fff" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="174dp"
+        android:text="or"
+        android:textAlignment="center"
+        android:textColor="#fff" />
+</RelativeLayout>
